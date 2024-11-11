@@ -9,7 +9,7 @@ public class PersonTest {
     private Person person = new Person("María", "Perez", "Z12345T", 2010, "España", 'F');
 
     @Test
-    void testConstructorAndGetters() {
+    void testGetters() {
         assertThat(person.getName(), is("María"));
         assertThat(person.getLastName(), is("Perez"));
         assertThat(person.getDni(), is("Z12345T"));
