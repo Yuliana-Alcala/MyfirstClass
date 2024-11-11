@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.is;
 import org.junit.jupiter.api.Test;
 
 public class PersonTest {
-    private Person person = new Person("María", "Perez", "Z12345T", 2010, "España", 'F');
+    private Person person = new Person("María", "Perez", "Z12345T", 2010, "España", 'M');
 
     @Test
     void testGetters() {
@@ -15,7 +15,7 @@ public class PersonTest {
         assertThat(person.getDni(), is("Z12345T"));
         assertThat(person.getYearOfBirth(), is(2010));
         assertThat(person.getCountryOfBirth(), is("España"));
-        assertThat(person.getGender(), is('F'));
+        assertThat(person.getGender(), is('M'));
     }
 
     
@@ -27,18 +27,18 @@ public class PersonTest {
         person.setDni("Y415345Z");
         person.setYearOfBirth(2015);
         person.setCountryOfBirth("Colombia");
-        person.setGender('F');
+        person.setGender('M');
 
         assertThat(person.getName(), is("Luisa"));
         assertThat(person.getLastName(), is("Gómez"));
         assertThat(person.getDni(), is("Y415345Z"));
         assertThat(person.getYearOfBirth(), is(2015));
         assertThat(person.getCountryOfBirth(), is("Colombia"));
-        assertThat(person.getGender(), is('F'));
+        assertThat(person.getGender(), is('M'));
     }
     @Test
     void testPrintAtributesPerson() {
-        person = new Person("Luisa", "Gómez", "Y415345Z", 2015, "Colombia", 'F');
+        person = new Person("Luisa", "Gómez", "Y415345Z", 2015, "Colombia", 'M');
 
         String result = person.printAtributesPerson();
 
@@ -47,7 +47,7 @@ public class PersonTest {
         assertThat(result, containsString("ID Number: Y415345Z"));
         assertThat(result, containsString("Birth Year: 2015"));
         assertThat(result, containsString("Birth Country: Colombia"));
-        assertThat(result, containsString("Gender: F"));
+        assertThat(result, containsString("Gender: M"));
 
     }
 }

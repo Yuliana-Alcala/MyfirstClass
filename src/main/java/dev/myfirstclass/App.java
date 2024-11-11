@@ -13,7 +13,7 @@ public final class App {
      */
     public static void main(String[] args) {
         
-        Person person1 = new Person("María", "Perez","Z12345T",2010,"España",'F');
+        Person person1 = new Person("María", "Perez","Z12345T",2010,"España",'M');
 
         Person person2 = new Person("Carlos", "Gómez","Y415345Z",2015,"Colombia",'H');
 
