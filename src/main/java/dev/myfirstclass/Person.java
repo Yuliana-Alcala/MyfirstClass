@@ -19,16 +19,7 @@ public class Person {
         this.countryOfBirth = countryOfBirth;
         this.gender = gender;
     }
-   /*
-    public void printAtributesPerson() {
-        System.out.println("First Name: " + name);
-        System.out.println("Last Name: " + lastName);
-        System.out.println("ID Number: " + dni);
-        System.out.println("Birth Year: " + yearOfBirth);
-        System.out.println("Birth Country: " + countryOfBirth);
-        System.out.println("Gender: " + gender +"\n");
-    }*/
-
+  
     public String printAtributesPerson() {
         String details = "First Name: " + name + "\n" +
                          "Last Name: " + lastName + "\n" +
